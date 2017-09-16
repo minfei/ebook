@@ -2,7 +2,7 @@
   <div class="my">
     <article>
       <div class="top arrow">
-        <img src="../../static/image/ava72.png" alt="">
+        <img src="../assets/image/ava72.png" alt="">
         <div class="right">
           <p>用户名: 爱哭的小猫</p>
           <p>电话：<a href="">绑定订货</a></a></p>
@@ -32,19 +32,11 @@
       </yd-cell-item>
     </yd-cell-group>
 
-    <yd-tabbar style="position: fixed;bottom: 0;">
-      <yd-tabbar-item title="首页" link="" >
-        <yd-icon name="home" slot="icon" size="0.54rem"></yd-icon>
-      </yd-tabbar-item>
-      <yd-tabbar-item title="购物车" link="" >
-        <yd-icon name="shopcart" slot="icon" size="0.54rem"></yd-icon>
-      </yd-tabbar-item>
-      <yd-tabbar-item title="个人中心" link="" active>
-        <yd-icon name="ucenter-outline" slot="icon" size="0.54rem"></yd-icon>
-      </yd-tabbar-item>
-    </yd-tabbar>
+
   </div>
 </template>
+
+
 
 <style lang="sass">
   .my
@@ -79,10 +71,3 @@
               padding: 0 0.2rem
               border-radius: 3px
 </style>
-
-<script type="text/babel">
-  export default {
-
-  }
-</script>
-
