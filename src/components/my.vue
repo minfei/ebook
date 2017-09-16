@@ -2,7 +2,7 @@
   <div class="my">
     <article>
       <div class="top arrow">
-        <img src="../../static/image/ava72.png" alt="">
+        <img src="../assets/image/ava72.png" alt="">
         <div class="right">
           <p>用户名: 爱哭的小猫</p>
           <p>电话：<a href="">绑定订货</a></a></p>
@@ -46,6 +46,8 @@
   </div>
 </template>
 
+
+
 <style lang="sass">
   .my
     yd-cell-group
@@ -79,10 +81,3 @@
               padding: 0 0.2rem
               border-radius: 3px
 </style>
-
-<script type="text/babel">
-  export default {
-
-  }
-</script>
-

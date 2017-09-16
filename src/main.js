@@ -6,12 +6,10 @@ import router from './router'
 import VueResource from 'vue-resource'
 import YDUI from 'vue-ydui';
 import 'vue-ydui/dist/ydui.rem.css';
+
 Vue.use(YDUI);
 Vue.use(VueResource)
-
 Vue.config.productionTip = false
-
-
 
 new Vue({
   el: '#app',

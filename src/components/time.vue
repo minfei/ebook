@@ -20,7 +20,10 @@
 </template>
 
 <script type="text/babel">
+  import axios from '../utils/axios'
+  import api from '../utils/api'
   export default {
+    name: 'hello',
     data() {
       return {
         datetime1: '05:21',
@@ -30,6 +33,20 @@
         yearFormat: '<span style="color:#F00;">{value}<i style="font-size: 12px;margin-left: 1px;">年</i></span>',
         monthFormat: '<span style="color:#0BB20C;">{value}<i style="font-size: 12px;margin-left: 1px;">月</i></span>',
         dayFormat: '<span style="color:#FFB400;">{value}<i style="font-size: 12px;margin-left: 1px;">日</i></span>'
+      }
+    },
+    mounted: function () {
+      this.fetchData()
+    },
+    methods: {
+      fetchData: async function () {
+        let params = {
+          add:'1'
+        }
+        const res = await axios.get(api.lus, params,'what')
+        if (res.data.success) {
+          //alert('请求成功')
+        }
       }
     }
   }
