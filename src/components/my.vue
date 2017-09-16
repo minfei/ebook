@@ -32,17 +32,7 @@
       </yd-cell-item>
     </yd-cell-group>
 
-    <yd-tabbar style="position: fixed;bottom: 0;">
-      <yd-tabbar-item title="首页" link="" >
-        <yd-icon name="home" slot="icon" size="0.54rem"></yd-icon>
-      </yd-tabbar-item>
-      <yd-tabbar-item title="购物车" link="" >
-        <yd-icon name="shopcart" slot="icon" size="0.54rem"></yd-icon>
-      </yd-tabbar-item>
-      <yd-tabbar-item title="个人中心" link="" active>
-        <yd-icon name="ucenter-outline" slot="icon" size="0.54rem"></yd-icon>
-      </yd-tabbar-item>
-    </yd-tabbar>
+
   </div>
 </template>
 

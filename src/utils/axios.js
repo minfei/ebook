@@ -35,9 +35,9 @@ function checkCode (res) {
   if (res.status === -404) {
     alert(res.msg)
   }
-  if (res.data && (!res.data.success)) {
-    alert(res.data.error_msg)
-  }
+  // if (res.data && (!res.data.success)) {
+  //   alert(res.data.error_msg)
+  // }
   return res
 }
 
