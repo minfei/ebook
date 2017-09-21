@@ -5,17 +5,20 @@ const index = r => require.ensure([], () => r(require('../components/index')), '
 const sort = r => require.ensure([], () => r(require('../components/sort')), 'sort')
 const myCenter = r => require.ensure([], () => r(require('../components/my')), 'myCenter')
 const scNoAdd = r => require.ensure([], () => r(require('../components/scNoAdd')), 'scNoAdd')
-
 const addList = r => require.ensure([], () => r(require('../components/addList')), 'addList')
 const allSort = r => require.ensure([], () => r(require('../components/allSort')), 'allSort')
 const bookInfo = r => require.ensure([], () => r(require('../components/bookInfo')), 'bookInfo')
-
-
 const commodityInfo = r => require.ensure([], () => r(require('../components/commodityInfo')), 'commodityInfo')
 const inputAdd = r => require.ensure([], () => r(require('../components/inputAdd')), 'inputAdd')
 const payMethod = r => require.ensure([], () => r(require('../components/payMethod')), 'payMethod')
 const shoppingCart = r => require.ensure([], () => r(require('../components/addList')), 'shoppingCart')
 const Study = r => require.ensure([], () => r(require('../components/Study')), 'Study')
+
+const diary = r => require.ensure([], () => r(require('../components/diary/index')), 'diary')
+const detail = r => require.ensure([], () => r(require('../components/diary/detail')), 'diary')
+const myDiary = r => require.ensure([], () => r(require('../components/diary/my')), 'diary')
+const comment = r => require.ensure([], () => r(require('../components/diary/comment')), 'comment')
+
 
 
 
@@ -38,7 +41,23 @@ export default new Router({
     {path: '/inputAdd',component: inputAdd},
     {path: '/payMethod',component: payMethod},
     {path: '/shoppingCart',component: shoppingCart},
-    {path: '/Study',component: bookInfo}
+    {path: '/Study',component: bookInfo},
+    {
+      path: '/diary',
+      component: diary
+    },
+    {
+      path: '/diary/detail',
+      component: detail
+    },
+    {
+      path: '/diary/my',
+      component: myDiary
+    },
+    {
+      path: '/diary/comment',
+      component: comment
+    }
 
 
 

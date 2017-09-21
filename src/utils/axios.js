@@ -45,13 +45,12 @@ export default {
   post (url, data) {
     return axios({
       method: 'post',
-      baseURL: 'http://visitor.77pay.com.cn',
+      //baseURL: 'http://visitor.77pay.com.cn',
       url,
       data: qs.stringify(data),
       timeout: 10000,
       headers: {
-        'X-Requested-With': 'XMLHttpRequest',
-        'Content-Type': 'application/json'
+        'X-Requested-With': 'XMLHttpRequest'
       }
     }).then(
       (response) => {

@@ -110,10 +110,20 @@
 
     },
     mounted() {
-      this.gitBanner();
-      this.gitBook()
+      this.getCode();
     },
     methods: {
+      getCode: async function (){
+        let params = {
+          code:'oVesdwaO1Ae4cKEaY9ktbjJylgu0'
+        }
+        const res = await http.get(api.login, params)
+        if (res.status == 200) {
+          this.gitBanner();
+          this.gitBook();
+          this.updateHotBook();
+        }
+      },
       gitBanner: async function () {
         const res = await http.get(api.banner)
         if (res.status == 200) {
@@ -128,7 +138,17 @@
         if (res.status == 200) {
           this.hotBook = res.data.data
         }
-      }
+      },
+      updateHotBook: async function () {
+        let params = {
+          bookid:'dsgdsgh'
+        }
+        const res = await http.post(api.updateHotBook, params)
+        console.log(res)
+        if (res.status == 200) {
+          this.hotBook = res.data.data
+        }
+      },
     }
   }
 </script>
